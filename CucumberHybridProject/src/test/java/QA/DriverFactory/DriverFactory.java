@@ -23,8 +23,10 @@ public class DriverFactory {
 			System.setProperty("webdriver.chrome.driver", "./Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 			
-		}else if(browserName.equals("firefox")) {
-			
+		}else if(browserName.equals("firefox")) 
+		{
+			System.setProperty("Webdriver.firefox.driver","./Drivers\\geckodriver.exe"
+					+ "");
 			driver = new FirefoxDriver();
 			
 		}else if(browserName.equals("edge")) {

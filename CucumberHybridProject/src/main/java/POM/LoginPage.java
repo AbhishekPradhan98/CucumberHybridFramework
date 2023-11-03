@@ -45,14 +45,16 @@ public class LoginPage {
 		
 	}
 	
-	public AccountPage clickOnLoginButton() {
+	public AccountPage clickOnLoginButton()  {
 		
 		elementUtils.clickOnElement(loginButton,CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		return new AccountPage(driver);
 		
+		
 	}
 	
-	public String getWarningMessageText() {
+	public String getWarningMessageText()  
+	{
 		
 		return elementUtils.getTextFromElement(warningMessage,CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		

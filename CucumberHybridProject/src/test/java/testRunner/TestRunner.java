@@ -7,7 +7,8 @@ import io.cucumber.junit.CucumberOptions;
 		
 		features = {
 				".//Featurefiles//",
-//				".//Featurefiles.LoginPage.feature"
+//				".//Featurefiles/Login.feature",
+//				".//Featurefiles/Register.feature"
 						
 		         },
 	    glue={"stepdefinitions","hooks"},
@@ -16,8 +17,8 @@ import io.cucumber.junit.CucumberOptions;
 	
 		plugin = {"pretty",
 				
-//				"html:target/HTML-Reports.html",
-//				"json:target/JSON_Reports.json",
+				"html:target/HTML-Reports.html",
+				"json:target/JSON_Reports.json",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",			
 		})
 public class TestRunner 
